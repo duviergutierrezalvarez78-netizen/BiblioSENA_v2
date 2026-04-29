@@ -38,7 +38,7 @@ function initModals() {
 
 // Marcar enlace activo
 function initNavigation() {
-    const currentPage = window.location.pathname.split('/').pop() || 'login.html';
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav__link').forEach(link => {
         if (link.getAttribute('href') === currentPage) {
             link.classList.add('nav__link--active');
