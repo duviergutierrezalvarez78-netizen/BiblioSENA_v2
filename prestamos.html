@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioSENA — Préstamos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar__header">
+                <svg class="sidebar__logo" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                <span class="sidebar__title">BiblioSENA</span>
+            </div>
+            <nav class="sidebar__nav">
+                <ul class="nav__list">
+                    <li><a href="dashboard.html" class="nav__link">Dashboard</a></li>
+                    <li><a href="libros.html" class="nav__link">Libros</a></li>
+                    <li><a href="prestamos.html" class="nav__link nav__link--active">Préstamos</a></li>
+                    <li><a href="reportes.html" class="nav__link">Reportes</a></li>
+                    <li><a href="perfil.html" class="nav__link">Mi Perfil</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="app-header"><h2 class="header__title">Gestión de Préstamos</h2><div class="user-menu"><div class="user-avatar">HG</div><button class="btn--logout" onclick="window.location.href='login.html'">Cerrar Sesión</button></div></header>
+            <div class="page-content">
+                <form class="form-filters">
+                    <div class="form-group"><input type="search" placeholder="Buscar por usuario o libro..."></div>
+                    <div class="form-group"><select><option>Todos los estados</option><option>Activo</option><option>Devuelto</option><option>En Mora</option></select></div>
+                    <div class="form-group"><input type="date"></div>
+                    <button type="submit" class="btn">Buscar</button>
+                </form>
+                <div class="toolbar"><button class="btn">+ Nuevo Préstamo</button></div>
+                <table>
+                    <thead><tr><th>ID</th><th>Usuario</th><th>Libro</th><th>Fecha Préstamo</th><th>Fecha Devolución</th><th>Estado</th><th>Acciones</th></tr></thead>
+                    <tbody>
+                        <tr><td>#001</td><td>Juan Pérez</td><td>Clean Code</td><td>15/04/2026</td><td>22/04/2026</td><td><span class="badge badge--success">Activo</span></td><td><button class="btn btn--small" style="background:#2E7D32">Registrar Devolución</button></td></tr>
+                        <tr><td>#002</td><td>María García</td><td>JavaScript: The Good Parts</td><td>10/04/2026</td><td>17/04/2026</td><td><span class="badge badge--error">En Mora</span></td><td><button class="btn btn--small" style="background:#2E7D32">Registrar Devolución</button></td></tr>
+                        <tr><td>#003</td><td>Carlos López</td><td>Design Patterns</td><td>18/04/2026</td><td>25/04/2026</td><td><span class="badge badge--success">Activo</span></td><td><button class="btn btn--small" style="background:#2E7D32">Registrar Devolución</button></td></tr>
+                    </tbody>
+                </table>
+                <nav class="pagination"><a href="#">&laquo;</a><a href="#" class="active">1</a><a href="#">2</a><a href="#">&raquo;</a></nav>
+            </div>
+            <footer class="main-footer">BiblioSENA v1.0.0 — SENA</footer>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

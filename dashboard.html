@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioSENA — Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar__header">
+                <svg class="sidebar__logo" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                </svg>
+                <span class="sidebar__title">BiblioSENA</span>
+            </div>
+            <nav class="sidebar__nav">
+                <ul class="nav__list">
+                    <li><a href="dashboard.html" class="nav__link nav__link--active">Dashboard</a></li>
+                    <li><a href="libros.html" class="nav__link">Libros</a></li>
+                    <li><a href="prestamos.html" class="nav__link">Préstamos</a></li>
+                    <li><a href="reportes.html" class="nav__link">Reportes</a></li>
+                    <li><a href="perfil.html" class="nav__link">Mi Perfil</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="app-header">
+                <h2 class="header__title">Dashboard</h2>
+                <div class="user-menu">
+                    <div class="user-avatar">HG</div>
+                    <div>
+                        <div class="user-name">Henry Duvier Gutiérrez</div>
+                        <div class="user-role">Administrador</div>
+                    </div>
+                    <button class="btn--logout" onclick="window.location.href='login.html'">Cerrar Sesión</button>
+                </div>
+            </header>
+            <div class="page-content">
+                <section class="stats-grid">
+                    <article class="stat-card">
+                        <div class="stat-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="stat-card__value">1,245</div>
+                            <div class="stat-card__label">Total de Libros</div>
+                        </div>
+                    </article>
+                    <article class="stat-card">
+                        <div class="stat-card__icon orange">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="stat-card__value">48</div>
+                            <div class="stat-card__label">Préstamos Activos</div>
+                        </div>
+                    </article>
+                    <article class="stat-card">
+                        <div class="stat-card__icon red">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="stat-card__value">12</div>
+                            <div class="stat-card__label">En Mora</div>
+                        </div>
+                    </article>
+                    <article class="stat-card">
+                        <div class="stat-card__icon blue">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="stat-card__value">328</div>
+                            <div class="stat-card__label">Usuarios</div>
+                        </div>
+                    </article>
+                </section>
+                <section class="section">
+                    <h3 class="section__title">Préstamos del Mes</h3>
+                    <div class="chart-container">[Gráfico de préstamos mensuales]</div>
+                </section>
+                <section class="section">
+                    <h3 class="section__title">Accesos Rápidos</h3>
+                    <div class="quick-actions">
+                        <button class="btn">+ Nuevo Préstamo</button>
+                        <button class="btn btn--outline">+ Agregar Libro</button>
+                        <button class="btn btn--outline" onclick="window.location.href='reportes.html'">Ver Reportes</button>
+                    </div>
+                </section>
+            </div>
+            <footer class="main-footer">BiblioSENA v1.0.0 — Sistema de Gestión de Biblioteca — SENA</footer>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

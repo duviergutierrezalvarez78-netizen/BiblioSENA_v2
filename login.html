@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioSENA — Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+    <div class="login-card">
+        <div class="login-header">
+            <svg class="login-logo" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            <h1 class="login-title">BiblioSENA</h1>
+            <p class="login-subtitle">Sistema de Gestión de Biblioteca</p>
+        </div>
+        <form class="login-form" action="dashboard.html" method="POST">
+            <div class="form-group">
+                <label>Correo Electrónico</label>
+                <input type="email" placeholder="correo@sena.edu.co" required>
+            </div>
+            <div class="form-group">
+                <label>Contraseña</label>
+                <input type="password" placeholder="Ingrese su contraseña" required>
+            </div>
+            <div class="form-group">
+                <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+                    <input type="checkbox" style="width:auto"> Recordarme
+                </label>
+            </div>
+            <button type="submit" class="btn">Iniciar Sesión</button>
+        </form>
+        <div class="login-footer">
+            <p>SERVICIO NACIONAL DE APRENDIZAJE — SENA</p>
+            <p style="margin-top:4px">Versión 1.0.0</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
