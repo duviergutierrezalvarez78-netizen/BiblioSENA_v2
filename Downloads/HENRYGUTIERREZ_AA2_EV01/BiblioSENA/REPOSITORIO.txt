@@ -1,0 +1,36 @@
+============================================================
+  ENLACE DEL REPOSITORIO — GA7-220501096-AA2-EV01
+============================================================
+
+Aprendiz  : Henry Duvier Gutiérrez Álvarez
+Ficha     : 3186681
+Evidencia : GA7-220501096-AA2-EV01 — Codificación de módulos del software
+
+------------------------------------------------------------
+REPOSITORIO GITHUB:
+https://github.com/TU_USUARIO/BiblioSENA
+------------------------------------------------------------
+
+INSTRUCCIONES PARA CREAR EL REPOSITORIO Y SUBIR EL PROYECTO:
+
+1. Crear cuenta en https://github.com (si aún no tiene una)
+
+2. Crear nuevo repositorio:
+   - Nombre: BiblioSENA
+   - Descripción: Sistema de Gestión de Biblioteca — SENA Ficha 3186681
+   - Visibilidad: Public
+   - Inicializar con README: NO (ya incluimos uno)
+
+3. En la carpeta del proyecto, ejecutar:
+
+   git init
+   git add .
+   git commit -m "feat: codificación módulo BiblioSENA con JDBC — GA7-AA2-EV01"
+   git branch -M main
+   git remote add origin https://github.com/TU_USUARIO/BiblioSENA.git
+   git push -u origin main
+
+4. Reemplazar TU_USUARIO con el nombre de usuario real de GitHub
+   y actualizar este archivo con el enlace definitivo.
+
+============================================================

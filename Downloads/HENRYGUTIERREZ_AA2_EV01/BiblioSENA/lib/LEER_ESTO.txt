@@ -1,0 +1,10 @@
+COLOQUE AQUÍ EL ARCHIVO mysql-connector-java-8.x.x.jar
+
+Descargue el driver JDBC desde:
+https://mvnrepository.com/artifact/mysql/mysql-connector-java
+
+Versión recomendada: 8.0.33
+Archivo a descargar: mysql-connector-java-8.0.33.jar
+
+Una vez descargado, colóquelo en esta carpeta /lib/ y
+agregue la referencia al classpath de su proyecto.
